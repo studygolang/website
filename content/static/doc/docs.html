@@ -1,44 +1,39 @@
 <!--{
-	"Title": "Documentation",
+	"Title": "文档",
 	"Path": "/doc/",
 	"Template": true
 }-->
 
 <p>
-The Go programming language is an open source project to make programmers more
-productive.
+Go 编程语言是一个开源项目，它使程序员更具生产力。
 </p>
 
 <p>
-Go is expressive, concise, clean, and efficient. Its concurrency
-mechanisms make it easy to write programs that get the most out of multicore
-and networked machines, while its novel type system enables flexible and
-modular program construction. Go compiles quickly to machine code yet has the
-convenience of garbage collection and the power of run-time reflection. It's a
-fast, statically typed, compiled language that feels like a dynamically typed,
-interpreted language.
+Go 语言具有很强的表达能力，它简洁、清晰而高效。得益于其并发机制，用它编写的程序能够非常有效地利用多核与联网的计算机，其新颖的类型系统则使程序结构变得灵活而模块化。
+Go 代码编译成机器码不仅非常迅速，还具有方便的垃圾收集机制和强大的运行时反射机制。
+它是一个快速的、静态类型的编译型语言，感觉却像动态类型的解释型语言。
 </p>
 
 <div id="manual-nav"></div>
 
-<h2 id="getting-started">Getting started</h2>
+<h2 id="getting-started">起步</h2>
 
-<h3 id="installing"><a href="/doc/install">Installing Go</a></h3>
+<h3 id="installing"><a href="/doc/install">安装 Go</a></h3>
 <p>
-Instructions for downloading and installing Go.
+下载和安装 Go 的说明。
 </p>
 
-<h3 id="get-started-tutorial"><a href="/doc/tutorial/getting-started.html">Tutorial: Getting started</a></h3>
+<h3 id="get-started-tutorial"><a href="/doc/tutorial/getting-started.html">教程: 起步</a></h3>
 <p>
-A brief Hello, World tutorial to get started. Learn a bit about Go code, tools, packages, and modules.
+简明 Hello，World 入门指南。了解一些有关 Go 代码，工具，包和模块的信息。
 </p>
 
-<h3 id="create-module-tutorial"><a href="/doc/tutorial/create-module.html">Tutorial: Create a module</a></h3>
+<h3 id="create-module-tutorial"><a href="/doc/tutorial/create-module.html">教程: 创建一个模块</a></h3>
 <p>
-A tutorial of short topics introducing functions, error handling, arrays, maps, unit testing, and compiling.
+简短的主题教程，介绍函数，错误处理，数组，map，单元测试和编译。
 </p>
 
-<h2 id="learning">Learning Go</h2>
+<h2 id="learning">学习 Go</h2>
 
 <img class="gopher" src="/doc/gopher/doc.png" alt=""/>
 
@@ -46,42 +41,36 @@ A tutorial of short topics introducing functions, error handling, arrays, maps, 
 	{{if $.GoogleCN}}
 	  A Tour of Go
 	{{else}}
-	  <a href="//tour.golang.org/">A Tour of Go</a>
+	  <a href="http://tour.studygolang.com/">Go 指南</a>
 	{{end}}
 </h3>
 <p>
-An interactive introduction to Go in three sections.
-The first section covers basic syntax and data structures; the second discusses
-methods and interfaces; and the third introduces Go's concurrency primitives.
-Each section concludes with a few exercises so you can practice what you've
-learned. You can {{if not $.GoogleCN}}<a href="//tour.golang.org/">take the tour
-online</a> or{{end}} install it locally with:
+Go 语言的交互式简介，它分为三部分。
+第一部分介绍基本语法和数据结构；第二部分讨论方法和接口。
+第三部分介绍 Go 的并发原语。每节末尾都有几个练习，你可以对自己的所学进行实践。
+你可以 <a href="http://tour.studygolang.com/">在线学习</a> 或 安装到本地：
 </p>
 <pre>
 $ go get golang.org/x/tour
 </pre>
 <p>
-This will place the <code>tour</code> binary in your workspace's <code>bin</code> directory.
+这会将 <code>tour</code> 二进制文件安装到工作区的 <code>bin</code> 目录中。
 </p>
 
-<h3 id="code"><a href="code.html">How to write Go code</a></h3>
+<h3 id="code"><a href="code.html">如何编写 Go 代码</a></h3>
 <p>
-This doc explains how to develop a simple set of Go packages inside a module,
-and it shows how to use the <a href="/cmd/go/"><code>go</code>&nbsp;command</a>
-to build and test packages.
+该文档说明了如何在模块内开发一组简单的 Go 包，并展示了如何使用 <a href="/cmd/go/"><code>go</code>&nbsp; 命令</a>来构建和测试包。
 </p>
 
-<h3 id="editors"><a href="editors.html">Editor plugins and IDEs</a></h3>
+<h3 id="editors"><a href="editors.html">编辑器插件和 IDE</a></h3>
 <p>
-A document that summarizes commonly used editor plugins and IDEs with
-Go support.
+该文档总结了 Go 支持的常用编辑器插件和 IDE。
 </p>
 
 <h3 id="effective_go"><a href="effective_go.html">Effective Go</a></h3>
 <p>
-A document that gives tips for writing clear, idiomatic Go code.
-A must read for any new Go programmer. It augments the tour and
-the language specification, both of which should be read first.
+提供有关编写清晰、惯用的 Go 代码的文档。新手 Go 程序员必须阅读。
+它是对指南和语言规范的补充，你应该首先阅读它们（指南和语言规范）。
 </p>
 
 <h3 id="diagnostics"><a href="/doc/diagnostics.html">Diagnostics</a></h3>
